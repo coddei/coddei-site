@@ -5,6 +5,8 @@ import DiscordImage from '../../assets/images/discord.png';
 import TeamImage from '../../assets/images/multiple-users-silhouette.png';
 import GithubImage from '../../assets/images/github-image.png';
 
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="content" style={{background: `url(${Background}) right/cover`}}>
@@ -22,15 +24,15 @@ export default function Home() {
           </p>
         </div>
         <div className="buttons-left-home">
-          <div>
+          <Link>
             <img src={DiscordImage}></img>
-          </div>
-          <div>
+          </Link>
+          <Link>
             <img src={TeamImage}></img>
-          </div>
-          <div>
+          </Link>
+          <Link>
             <img src={GithubImage}></img>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

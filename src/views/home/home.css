@@ -41,7 +41,7 @@
     align-items: center;
 }
     
-.buttons-left-home > div {
+.buttons-left-home > a {
     background: var(--text-blue);
     padding: 30px 20px;
     border-radius: 15px;
@@ -52,10 +52,15 @@
     width: 100px;
     height: 100px;
     box-shadow: 0px 2px 37px rgba(0, 115, 255, 0.61);
+    transition: .3s;
 }
 
-.buttons-left-home > div > img {
+.buttons-left-home > a > img {
     width: 70%;
+}
+
+.buttons-left-home > a:hover{
+    transform: scale(1.05)
 }
 
 .text-left-home {
