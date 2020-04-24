@@ -23,6 +23,10 @@ body {
   background: var(--light-background);
 }
 
+.back-blue{
+  background: var(--text-blue);
+}
+
 .text-light {
   color: var(--text-light);
 }

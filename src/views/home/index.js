@@ -13,6 +13,13 @@ export default function Home() {
           <h1 className="title-home">
             Lorem ipsum dolor sit amet
           </h1>
+          <div className="divider back-blue"></div>
+          <p className="secondary-text-home">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          </p>
         </div>
         <div className="buttons-left-home">
           <div>

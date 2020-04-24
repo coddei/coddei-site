@@ -6,16 +6,33 @@
 .shell-left {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 50vw;
     height: 100vh;
     flex-direction: column;
+    padding-left: 3vw;
 }
 
 .title-home {
     color: var(--text-blue);
-    font-size: 60pt;
+    font-size: 55pt;
     width: 70%;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.divider{
+    width: 20vw;
+    height: 20px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.secondary-text-home{
+    color: var(--text-light-blue);
+    width: 60%;
+    font-size: 14pt;
 }
 
 .buttons-left-home {
@@ -25,8 +42,22 @@
 }
     
 .buttons-left-home > div {
-    background: red;
-    padding: 20px;
-    width: 30%;
-    height: 30%;
+    background: var(--text-blue);
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 2px 37px rgba(0, 115, 255, 0.61);
+}
+
+.buttons-left-home > div > img {
+    width: 70%;
+}
+
+.text-left-home {
+    margin-bottom: 80px;
 }
