@@ -3,8 +3,9 @@
     width: 100%;
 }
 
-#home-content{
-    background: url('../../assets/images/background-home.png') center/cover;
+#home-content {
+    background: url("../../assets/images/background-home.png") right/cover;
+    transition: background cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
 }
 
 .shell-left {
@@ -19,13 +20,14 @@
 
 .title-home {
     color: var(--text-blue);
-    font-size: 55pt;
+    font-size: 9vh;
     width: 70%;
     margin: 0px;
     text-transform: uppercase;
+    margin-top: 60px;
 }
 
-.divider{
+.divider {
     width: 20vw;
     height: 20px;
     border-radius: 100px;
@@ -33,10 +35,11 @@
     margin-bottom: 60px;
 }
 
-.secondary-text-home{
+.secondary-text-home {
     color: var(--text-light-blue);
     width: 60%;
     font-size: 14pt;
+    text-align: justify;
 }
 
 .buttons-left-home {
@@ -44,7 +47,7 @@
     justify-content: center;
     align-items: center;
 }
-    
+
 .buttons-left-home > a {
     background: var(--text-blue);
     padding: 30px 20px;
@@ -56,15 +59,15 @@
     width: 100px;
     height: 100px;
     box-shadow: 0px 2px 37px rgba(0, 115, 255, 0.61);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .buttons-left-home > a > img {
     width: 70%;
 }
 
-.buttons-left-home > a:hover{
-    transform: scale(1.05)
+.buttons-left-home > a:hover {
+    transform: scale(1.05);
 }
 
 .text-left-home {
@@ -72,7 +75,39 @@
 }
 
 @media only screen and (max-width: 1440px) {
-    #home-content{
-        background: url('../../assets/images/background-home-md.png') center/cover;
+    #home-content {
+        background: url("../../assets/images/background-home-md.png")
+            right/cover;
+    }
+    .title-home {
+        font-size: 8vh;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .title-home {
+        font-size: 35pt;
+        width: 90%;
+    }
+    .divider {
+        margin-bottom: 30px;
+    }
+    .text-left-home {
+        margin-bottom: 30px;
+    }
+    .secondary-text-home {
+        width: 80%;
+    }
+    .buttons-left-home > a {
+        width: 7vw;
+        height: 12vh;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    #home-content {
+        background: url("../../assets/images/background-home-smd.png")
+            right/cover;
     }
 }

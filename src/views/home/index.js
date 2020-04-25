@@ -13,7 +13,7 @@ export default function Home() {
       <div className="shell-left">
         <div className="text-left-home">
           <h1 className="title-home">
-            Lorem ipsum dolor sit amet
+            Lorem ipsum<br/>dolor sit amet
           </h1>
           <div className="divider back-blue"></div>
           <p className="secondary-text-home">
