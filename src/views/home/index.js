@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="content" style={{background: `url(${Background}) right/cover`}}>
+    <div className="content" id="home-content">
       <div className="shell-left">
         <div className="text-left-home">
           <h1 className="title-home">

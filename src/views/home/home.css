@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+#home-content{
+    background: url('../../assets/images/background-home.png') center/cover;
+}
+
 .shell-left {
     display: flex;
     justify-content: center;
@@ -65,4 +69,10 @@
 
 .text-left-home {
     margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 1440px) {
+    #home-content{
+        background: url('../../assets/images/background-home-md.png') center/cover;
+    }
 }
