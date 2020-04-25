@@ -4,12 +4,15 @@ Feito com React JS, esse projeto tem o intuito de gerar as páginas usadas no si
 
 ## Instalação 👩‍💻:
 Clone o repositório e na pasta principal rode o comando abaixo:
-`npm install`
+
+>`npm install`
 
 ## Rodar ⚡:
 Para rodar basta inserir na página principal o comando abaixo:
-`npm start`
+
+>`npm start`
 
 ## Buildar 🔧:
 Para gerar a build estática do site rode na pasta principal o comando abaixo:
-`npm run build`
+
+>`npm run build`
