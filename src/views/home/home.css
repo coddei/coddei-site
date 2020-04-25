@@ -58,7 +58,7 @@
     justify-content: center;
     width: 100px;
     height: 100px;
-    box-shadow: 0px 2px 37px rgba(0, 115, 255, 0.61);
+    box-shadow: 0px 18px 44px -12px rgba(0, 115, 255, 0.74);
     transition: 0.3s;
 }
 
@@ -109,5 +109,50 @@
     #home-content {
         background: url("../../assets/images/background-home-smd.png")
             right/cover;
+    }
+}
+
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+    #home-content {
+        background: url("../../assets/images/background-home-xs.png")
+        right/cover;
+    }
+    .text-left-home {
+        margin-bottom: 0px;
+    }
+    .title-home {
+        font-size: 30pt;
+        width: 100%;
+        margin-top: 90px;
+    }
+    
+    .secondary-text-home {
+        width: 100%;
+        font-size: 12pt
+    }
+    
+    .shell-left {
+        justify-content: start;
+        width: 90vw;
+        height: 100vh;
+    }
+    .buttons-left-home > a{
+        width: 11vw;
+        height: 4vh;
+        margin: 0px 17px;
+    }
+    .divider {
+        width: 55vw;
+        height: 13px;
+    }
+}
+
+@media only screen and (max-height: 640px) and (orientation: portrait) {
+    .secondary-text-home {
+        font-size: 11pt;
+    }
+    .title-home {
+        font-size: 25pt;
+        margin-top: 80px;
     }
 }
