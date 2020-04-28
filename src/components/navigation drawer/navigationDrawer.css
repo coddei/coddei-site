@@ -1,0 +1,27 @@
+.navigation-drawer{
+    width: 40vh;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(9px);
+    transition: .5s;
+    background: #ffffffb0;
+    z-index: 9;
+    box-shadow: 10px 1px 20px #40579c3d;
+    border-radius: 0px 40px 40px 0px;
+}
+
+.navigation-drawer ul{
+    padding: 0px;
+    margin-top: 45px;
+}
+
+.navigation-item{
+    list-style: none;
+    width: 100%;
+    font-size: 13pt;
+    color: #FFF;
+    padding: 15px 0px;
+    text-align: center;
+}

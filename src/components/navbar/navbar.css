@@ -60,3 +60,19 @@
   height: 20px;
   width: auto;
 }
+
+.menuIcon{
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 600px){
+  .menuIcon{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .navlink-left, .navlink-right{
+    display: none;
+  }
+}
