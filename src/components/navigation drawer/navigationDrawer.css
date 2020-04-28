@@ -1,5 +1,5 @@
 .navigation-drawer{
-    width: 40vh;
+    width: 60vw;
     height: 100vh;
     position: absolute;
     left: 0;
@@ -10,6 +10,22 @@
     z-index: 9;
     box-shadow: 10px 1px 20px #40579c3d;
     border-radius: 0px 40px 40px 0px;
+    transition: .5s;
+}
+
+.closerDiv{
+    width: 40vw;
+    height: 100vh;
+    background: none;
+    position: absolute;
+    right: 0;
+}
+
+.close-icon{
+    width: 20px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
 }
 
 .navigation-drawer ul{

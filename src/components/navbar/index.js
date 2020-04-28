@@ -6,9 +6,10 @@ import MenuIcon from "./../../assets/images/menu-icon.svg";
 import NavigationDrawer from "../navigation drawer";
 export default function Navbar() {
   const [navigation, setNavigation] = useState(false);
+  const [left, setLeft] = useState('-60vw');
   return (
     <>
-      {navigation ? <NavigationDrawer/> : null}
+      <NavigationDrawer updateNavigation={setNavigation} setLeft={setLeft} left={left}/>
       <div className="navbar light">
         <ul className="navbar-links">
           <div className="navlink navlink-left">
@@ -54,7 +55,7 @@ export default function Navbar() {
             <img
               src={MenuIcon}
               alt=""
-              onClick={(e) => setNavigation(!navigation)}
+              onClick={() => {setNavigation(!navigation); setLeft('0vw')}}
             />
           </li>
           <div className="navlink navlink-right">
