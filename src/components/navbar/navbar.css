@@ -35,7 +35,7 @@
 }
 
 .navbar-link:hover:not(.active-navlink) {
-    transform: scale(1.05);
+  font-size: 12pt;
   }
 
 .navlink {

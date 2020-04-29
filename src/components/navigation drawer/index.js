@@ -46,7 +46,7 @@ export default function NavigationDrawer({ updateNavigation, setLeft, left }) {
           </li>
           <li className="navigation-item">
             <NavLink
-              to="/sobre"
+              to="/discord"
               activeClassName="active-navlink"
               className="navbar-link text-light-blue"
             >
