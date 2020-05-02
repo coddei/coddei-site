@@ -8,7 +8,7 @@
     transition: background cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
 }
 
-.shell-left {
+.shell-left-discord {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -72,9 +72,46 @@
     margin-bottom: 80px;
 }
 
+.text-left-discord a{
+    text-decoration: none;
+}
+
+
+.discordButton{
+    border: none;
+    background: var(--text-blue);
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 15pt;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    box-shadow: 0px 17px 44px -12px #0073ffdb;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.discordButton:hover{
+    transform: scale(1.05);
+}
+
+.discordButton:hover > img{
+    margin-left: 25px;
+}
+
+.discordButton img{
+    width: 25px;
+    margin-left: 15px;
+    transition: .3s;   
+}
+
 @media only screen and (max-width: 1440px) {
-    #home-content {
-        /* background: url("../../assets/images/background-discord-md.png") right/cover;*/
+    #discord-content {
+        background: url("../../assets/images/discord-background-md.png") left/cover;
             
     }
     .title-discord {
@@ -83,10 +120,10 @@
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1200px) {
     .title-discord {
-        font-size: 35pt;
-        width: 90%;
+        font-size: 6vw;
+        width: 100%;
     }
     .divider {
         margin-bottom: 30px;
@@ -103,9 +140,9 @@
     }
 }
 
-@media only screen and (max-height: 800px) {
-    #home-content {
-        /* background: url("../../assets/images/background-discord-smd.png") right/cover;*/
+@media only screen and (max-width: 1200px) {
+    #discord-content {
+        background: url("../../assets/images/discord-background-smd.png") left/cover;
             
     }
 }
@@ -129,7 +166,7 @@
         font-size: 12pt
     }
     
-    .shell-left {
+    .shell-left-discord {
         justify-content: start;
         width: 90vw;
         height: 100vh;
