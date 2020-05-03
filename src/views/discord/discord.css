@@ -138,6 +138,62 @@
     }
 }
 
+@media only screen and (max-height: 1366px) and (min-height: 1025px) and (orientation: portrait) {
+    #discord-content {
+        background: url("../../assets/images/discord-background-xs.png") left/59vh;
+        background-repeat: no-repeat;
+    }
+    .secondary-text-discord {
+        width: 45%;
+    }
+    .shell-left-discord {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .text-left-discord{
+        padding: 0px 25px;
+    }
+    .title-discord {
+        width: 100%;
+    }
+    .text-left-discord {
+        margin-bottom: 15vh;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (min-height: 900px) and (orientation: portrait) {
+    #discord-content {
+        background: url("../../assets/images/discord-background-xs.png") left/59vh;
+        background-repeat: no-repeat;
+    }
+    .secondary-text-discord {
+        width: 60%;
+    }
+    .shell-left-discord {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .text-left-discord{
+        padding: 0px 25px;
+    }
+    .title-discord {
+        width: 100%;
+    }
+    .text-left-discord {
+        margin-bottom: 10vh;
+    }
+}
+
 @media only screen and (max-width: 550px) and (orientation: portrait) {
     #discord-content {
         background: url("../../assets/images/discord-background-xs.png") left/59vh;

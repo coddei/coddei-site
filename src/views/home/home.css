@@ -147,6 +147,22 @@
     }
 }
 
+@media only screen and (max-height: 1366px) and (min-height: 1025px) and (orientation: portrait) {
+    #home-content {
+        background: url("../../assets/images/background-home-md.png")
+            right/115vh;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (min-height: 900px) and (orientation: portrait) {
+    #home-content {
+        background: url("../../assets/images/background-home-md.png")
+            right/95vh;
+        background-repeat: no-repeat;
+    }
+}
+
 @media only screen and (max-height: 640px) and (orientation: portrait) {
     .secondary-text-home {
         font-size: 11pt;

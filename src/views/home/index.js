@@ -21,15 +21,15 @@ export default function Home() {
           </p>
         </div>
         <div className="buttons-left-home">
-          <Link>
+          <Link to="/discord">
             <img src={DiscordImage}></img>
           </Link>
-          <Link>
+          {/* <Link>
             <img src={TeamImage}></img>
-          </Link>
-          <Link>
+          </Link> */}
+          <a href="https://github.com/coddei">
             <img src={GithubImage}></img>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

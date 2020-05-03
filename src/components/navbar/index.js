@@ -23,7 +23,7 @@ export default function Navbar() {
                 HOME
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/produtos"
                 activeClassName="active-navlink"
@@ -40,7 +40,7 @@ export default function Navbar() {
               >
                 SOBRE
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to="/discord"

@@ -26,7 +26,7 @@ export default function NavigationDrawer({ updateNavigation, setLeft, left }) {
               HOME
             </NavLink>
           </li>
-          <li className="navigation-item">
+          {/* <li className="navigation-item">
             <NavLink
               to="/produtos"
               activeClassName="active-navlink"
@@ -43,7 +43,7 @@ export default function NavigationDrawer({ updateNavigation, setLeft, left }) {
             >
               SOBRE
             </NavLink>
-          </li>
+          </li> */}
           <li className="navigation-item">
             <NavLink
               to="/discord"
