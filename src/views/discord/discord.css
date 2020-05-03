@@ -82,7 +82,7 @@
     font-size: 15pt;
     padding: 12px 40px;
     text-transform: uppercase;
-    box-shadow: 0px 17px 44px -12px #0073ffdb;
+    box-shadow: 0px 17px 44px -12px rgba(0, 115, 255, 0.859);
     transition: .5s;
     cursor: pointer;
 }

@@ -32,7 +32,7 @@
 
 .active-navlink{
     color: var(--text-blue) !important;
-    text-shadow: 0px 0px 17px #0073ff62;
+    text-shadow: 0px 0px 17px rgba(0, 115, 255, 0.384);
     font-size: 13pt;
     z-index: 9;
 }
