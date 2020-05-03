@@ -25,14 +25,6 @@
     text-transform: uppercase;
 }
 
-.divider {
-    width: 20vw;
-    height: 20px;
-    border-radius: 100px;
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
 .secondary-text-discord {
     color: var(--text-light-blue);
     width: 60%;
@@ -83,7 +75,7 @@
     border-radius: 100px;
     text-align: center;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     color: #FFF;
     font-weight: 600;
@@ -143,42 +135,43 @@
 @media only screen and (max-width: 1200px) {
     #discord-content {
         background: url("../../assets/images/discord-background-smd.png") left/cover;
-            
     }
 }
 
 @media only screen and (max-width: 550px) and (orientation: portrait) {
-    #home-content {
-        /* background: url("../../assets/images/background-discord-xs.png") right/cover;*/
+    #discord-content {
+        background: url("../../assets/images/discord-background-xs.png") left/59vh;
         
     }
-    .text-left-discord {
-        margin-bottom: 0px;
+    .shell-left-discord {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .text-left-discord{
+        padding: 0px 25px;
     }
     .title-discord {
-        font-size: 30pt;
+        font-size: 25pt;
         width: 100%;
-        margin-top: 90px;
     }
-    
-    .secondary-text-discord {
+    .secondary-text-discord{
         width: 100%;
-        font-size: 12pt
-    }
-    
-    .shell-left-discord {
-        justify-content: start;
-        width: 90vw;
-        height: 100vh;
-    }
-    .buttons-left-discord > a{
-        width: 11vw;
-        height: 4vh;
-        margin: 0px 17px;
+        font-size: 11pt;
     }
     .divider {
         width: 55vw;
-        height: 13px;
+        height: 10px;
+    }
+    .discordButton{
+        width: 100%;
+    }
+    .text-left-discord {
+        margin-bottom: 70px;
     }
 }
 
@@ -189,5 +182,8 @@
     .title-discord {
         font-size: 25pt;
         margin-top: 80px;
+    }
+    .text-left-discord {
+        margin-bottom: 45px;
     }
 }

@@ -20,7 +20,7 @@
 
 .title-home {
     color: var(--text-blue);
-    font-size: 9vh;
+    font-size: 8vh;
     width: 70%;
     margin: 0px;
     text-transform: uppercase;
@@ -154,5 +154,22 @@
     .title-home {
         font-size: 25pt;
         margin-top: 80px;
+    }
+}
+
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+    .secondary-text-home {
+        display: none;
+    }
+    .divider {
+        margin-bottom: 0px;
+        height: 10px;
+    }
+    .title-home {
+        font-size: 25pt;
+        width: 100%;
+    }
+    .text-left-home {
+        margin-bottom: 0px;
     }
 }

@@ -4,9 +4,9 @@
     position: absolute;
     left: 0;
     -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(9px);
+    backdrop-filter: blur(15px);
     transition: .5s;
-    background: #ffffffb0;
+    background: #ffffffaf;
     z-index: 9;
     box-shadow: 10px 1px 20px #40579c3d;
     border-radius: 0px 40px 40px 0px;
