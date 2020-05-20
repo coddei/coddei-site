@@ -17,7 +17,7 @@ export default function DiscordPage() {
             dúvidas, ajude outros usuários a resolver problemas ou divulgue suas
             artes, tudo isso em um só servidor <span role="img">🤩</span>
           </p>
-          <a href="https://discord.gg/c994NVE"><button className="discordButton">Vamos Lá!<img src={ArrowRight} alt=""/></button></a>
+          <a href="bit.ly/coddeidiscord"><button className="discordButton">Vamos Lá!<img src={ArrowRight} alt=""/></button></a>
         </div>
       </div>
     </div>

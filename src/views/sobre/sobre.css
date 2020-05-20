@@ -13,7 +13,7 @@
 }
 .shell-text-bottom{
     width: 90vw;
-    padding-left: 20px;
+    padding-left: 3vw;
     padding-top: 5vh;
 }
 
@@ -48,7 +48,7 @@
 
 .divider-sobre {
     width: 20vw;
-    height: 20px;
+    height: 15px;
     border-radius: 100px;
     margin-top: 10px;
     margin-bottom: 60px;
@@ -158,7 +158,9 @@
 
 @media only screen and (max-width: 768px) {
     #sobre-content-top {
-        background: url("../../assets/images/background-sobre-smd.png") right/cover;
+        background: url("../../assets/images/background-sobre-smd.png") right/130vh;
+        background-repeat: no-repeat;
+        background-position-y: top;
     }
 }
 
@@ -199,13 +201,13 @@
         background: url(/static/media/background-sobre-xs.6878f494.png) top/60vh;
         background-repeat: no-repeat;
         background-position-x: right;
-        height: 140vh;
+        height: auto;
         flex-direction: column;
         display: flex;
         justify-content: flex-end;
     }
     #sobre-content-bottom {
-        height: 130vh;
+        height: auto;
         flex-direction: column;
         display: flex;
         justify-content: flex-end;
@@ -225,15 +227,28 @@
     }
 
     #sobre-content-bottom {
-        height: 145vh;
+        height: 170vh;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 400px) and (device-height: 667px) and (orientation: portrait) {
+    #sobre-content-top {
+        height: 155vh;
+    }
+
+    #sobre-content-bottom {
+        height: 160vh;
     }
 }
 
 @media only screen and (max-height: 1366px) and (min-height: 1025px) and (orientation: portrait) {
-    #sobre-content {
-        /* background: url("../../assets/images/background-sobre-md.png")
-            right/115vh; */
+    #sobre-content-top {
+        background: url("../../assets/images/background-sobre-smd.png")
+            right/cover;
         background-repeat: no-repeat;
+    }
+    .title-sobre {
+        margin-top: -24vh;
     }
 }
 
