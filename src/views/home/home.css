@@ -20,8 +20,8 @@
 
 .title-home {
     color: var(--text-blue);
-    font-size: 8vh;
-    width: 70%;
+    font-size: 7vh;
+    width: 85%;
     margin: 0px;
     text-transform: uppercase;
     margin-top: 60px;
@@ -36,7 +36,7 @@
 }
 
 .secondary-text-home {
-    color: var(--text-light-blue);
+    color: var( --secondary-black);
     width: 60%;
     font-size: 14pt;
     text-align: justify;

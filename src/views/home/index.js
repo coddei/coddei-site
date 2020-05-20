@@ -12,7 +12,7 @@ export default function Home() {
       <div className="shell-left">
         <div className="text-left-home">
           <h1 className="title-home">
-            Tudo começa<br/>na ideia e na programação.
+            Tudo começa<br/>na programação.
           </h1>
           <div className="divider back-blue"></div>
           <p className="secondary-text-home">

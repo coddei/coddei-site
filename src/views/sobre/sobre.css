@@ -55,7 +55,7 @@
 }
 
 .secondary-text-sobre {
-    color: #426187;
+    color: var(--secondary-black);
     width: 60%;
     font-size: 14pt;
     text-align: justify;
