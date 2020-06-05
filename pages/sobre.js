@@ -101,7 +101,7 @@ export default function Sobre() {
                         type={"Estudante de Web Development"}
                         email={""}
                         text={
-                            "Estudante de T.I."
+                            "Estudante de T.I e designer por hobby. Juntando os universo do design e da programação, busco sempre desenvolver projetos singulares e contribuir de forma única e marcantes nos projetos em que atuo"
                         }
                         links={[
                             "https://github.com/henrymedeiros",
