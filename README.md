@@ -20,7 +20,7 @@ npm install
 Para rodar basta inserir na página principal o comando abaixo:
 
 ```bash
-npm start
+npm run start
 ```
 
 ## Buildar 🔧:
