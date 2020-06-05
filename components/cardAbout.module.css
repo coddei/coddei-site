@@ -1,0 +1,120 @@
+.card{
+    width: 390px;
+    height: 210px;
+    background: #FFF;
+    box-shadow: 0px 17px 44px rgba(0, 115, 255, 0.11);
+    border: 2px solid rgba(0, 115, 255, 0.185);
+    border-radius: 20px;
+    padding: 40px 45px;
+    position: relative;
+    margin: 5vh 20px;
+    transform: scale(0.8);
+    transition: .5s;
+}
+
+.card:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 17px 54px rgba(0, 115, 255, 0.247);
+    border: 2px solid rgba(0, 115, 255, 0.5);
+}
+
+.shellName{
+    background: var(--text-blue);
+    color: #FFF;
+    border-radius: 11px;
+    position: absolute;
+    top: -30px;
+    right: 40px;
+    width: 240px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 17px 44px rgba(0, 115, 255, 0.356);
+    font-size: 15pt;
+}
+
+.nickname{
+    font-weight: 300;
+}
+
+.shellEmail{
+    display: flex;
+    align-items: center;
+}
+
+.emailCard{
+    color: #426187;
+}
+
+.iconCard{
+    color: var(--text-blue);
+    margin-right: 10px;
+}
+
+.typeCard{
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: #426187;
+}
+
+.textCard{
+    color: #567BAA;
+    font-size: 15px/29px
+}
+
+.profileCardAbout{
+    width: 132px;
+    height: 133px;
+    border-radius: 20px;
+    position: absolute;
+    top: -60px;
+    left: 40px;
+    box-shadow: 0px 17px 44px rgba(0, 115, 255, 0.192);
+}
+
+.shellCardActions{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+}
+
+.actionCard{
+    width: 85px;
+    height: 85px;
+    margin: 0px 30px;
+    border-radius: 11px;
+    box-shadow: 0px 17px 44px rgba(0, 115, 255, 0.356);
+}
+
+
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+    .card{
+        transform: scale(0.65);
+    }
+    .card *:not(h3){
+        font-size: 15pt;
+    }
+    .typeCard{
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+    .card{
+        transform: scale(0.55);
+        margin: 1vh 20px;
+    }
+    .card *:not(h3){
+        font-size: 17pt;
+    }
+    .typeCard{
+        font-size: 20pt;
+    }
+}

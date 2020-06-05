@@ -1,0 +1,337 @@
+.content {
+    height: 100vh;
+    width: 100%;
+}
+
+#sobreContentTop {
+    background: url("/backgrounds/background-sobre.png") right/cover;
+    transition: background cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+}
+
+#sobreContentBottom {
+    background: #F5FBFF;
+    position: relative;
+}
+.shellTextBottom {
+    width: 90vw;
+    padding-left: 3vw;
+    padding-top: 5vh;
+}
+
+.goTopButton {
+    cursor: pointer;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--text-blue);
+    border-radius: 15px;
+    box-shadow: 0px 18px 44px -12px rgba(0, 115, 255, 0.74);    
+}
+
+.goTopButton:hover {
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+.goTopButton > img {
+    transform: rotate(180deg);
+}
+
+.goBottomButton {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.goBottomButton > div {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: .5s;
+    background-color: var(--text-blue);
+    box-shadow: 0px 18px 44px -12px rgba(0, 115, 255, 0.74);
+}
+
+.goBottomButton > div:hover {
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+.shellLeftSobre {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    padding-left: 3vw;
+}
+
+.titleSobreBottom {
+    color: var(--text-blue);
+    font-size: 6vh;
+    width: 70%;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.titleSobre {
+    color: var(--text-blue);
+    font-size: 8vh;
+    width: 70%;
+    margin: 0px;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.dividerSobre {
+    width: 20vw;
+    height: 15px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.secondaryTextSobre {
+    color: var(--secondary-black);
+    width: 60%;
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 28pt;
+}
+
+.buttonsLeftSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsLeftSobre > a {
+    background: var(--text-blue);
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 18px 44px -12px rgba(0, 115, 255, 0.74);
+    transition: 0.3s;
+}
+
+.buttonsLeftSobre > a > img {
+    width: 70%;
+}
+
+.buttonsLeftSobre > a:hover {
+    transform: scale(1.05);
+}
+
+.textLeftSobre {
+    margin-bottom: 80px;
+}
+
+.shellCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 1440px) {
+    #sobreContent {
+        /* background: url("../../assets/images/background-sobre-md.png") right/cover;*/
+            
+    }
+    .titleSobre {
+        font-size: 8vh;
+        width: 90%;
+        margin-top: 22vh;
+    }
+    .secondaryTextSobre {
+        font-size: 12pt;
+        line-height: 25pt;
+    }
+    .dividerSobre {
+        height: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .titleSobre {
+        font-size: 35pt;
+        width: 90%;
+    }
+    .divider {
+        margin-bottom: 30px;
+    }
+    .textLeftSobre {
+        margin-bottom: 30px;
+    }
+    .secondaryTextSobre {
+        width: 80%;
+    }
+    .buttonsLeftSobre > a {
+        width: 7vw;
+        height: 12vh;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #sobreContentTop {
+        background: url("/backgrounds/background-sobre-md.png") right/cover;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .shellCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    #sobreContentTop {
+        background: url("/backgrounds/background-sobre-smd.png") right/130vh;
+        background-repeat: no-repeat;
+        background-position-y: top;
+    }
+}
+
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+    #sobreContentTop {
+        background: url("/backgrounds/background-sobre-xs.png") right/cover;
+        
+    }
+    .textLeftSobre {
+        margin-bottom: 0px;
+    }
+    .titleSobre {
+        font-size: 30pt;
+        width: 100%;
+        margin-top: 90px;
+    }
+    
+    .secondaryTextSobre {
+        width: 100%;
+        font-size: 12pt
+    }
+    
+    .shellLeftSobre {
+        justify-content: flex-end;
+        width: 80vw;
+        height: 140vh;
+    }
+    .buttonsLeftSobre > a{
+        width: 11vw;
+        height: 4vh;
+        margin: 0px 17px;
+    }
+    .divider {
+        width: 55vw;
+        height: 13px;
+    }
+    #sobreContentTop {
+        background: url(/static/media/background-sobre-xs.6878f494.png) top/60vh;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #sobreContentBottom {
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .shellCards{
+        justify-content: flex-end;
+    }
+    .titleSobreBottom {
+        font-size: 4vh;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+    #sobreContentTop {
+        height: 165vh;
+    }
+
+    #sobreContentBottom {
+        height: 170vh;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 400px) and (device-height: 667px) and (orientation: portrait) {
+    #sobreContentTop {
+        height: 155vh;
+    }
+
+    #sobreContentBottom {
+        height: 160vh;
+    }
+}
+
+@media only screen and (max-height: 1366px) and (min-height: 1025px) and (orientation: portrait) {
+    #sobreContentTop {
+        background: url("/backgrounds/background-sobre-smd.png")
+            right/cover;
+        background-repeat: no-repeat;
+    }
+    .titleSobre {
+        margin-top: -24vh;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (min-height: 900px) and (orientation: portrait) {
+    #sobreContent {
+        /* background: url("../../assets/images/background-sobre-md.png")
+            right/95vh; */
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-height: 640px) and (orientation: portrait) {
+    .secondaryTextSobre {
+        font-size: 11pt;
+    }
+    .titleSobre {
+        font-size: 25pt;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+    .secondaryTextSobre {
+        display: none;
+    }
+    .divider {
+        margin-bottom: 0px;
+        height: 10px;
+    }
+    .titleSobre {
+        font-size: 25pt;
+        width: 100%;
+    }
+    .textLeftSobre {
+        margin-bottom: 0px;
+    }
+}
