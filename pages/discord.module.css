@@ -1,0 +1,245 @@
+.content {
+    height: 100vh;
+    width: 100%;
+}
+
+#discordContent {
+    background: url("/backgrounds/discord-background.png") left/cover;
+    transition: background cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+}
+
+.shellLeftDiscord {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 55vw;
+    height: 100vh;
+    flex-direction: column;
+    padding-left: 40vw;
+}
+
+.titleDiscord {
+    color: var(--text-blue);
+    font-size: 8vh;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.secondaryTextDiscord {
+    color: var( --secondary-black);
+    width: 60%;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.buttonsLeftDiscord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsLeftDiscord > a {
+    background: var(--text-blue);
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 18px 44px -12px rgba(0, 115, 255, 0.74);
+    transition: 0.3s;
+}
+
+.buttonsLeftDiscord > a > img {
+    width: 70%;
+}
+
+.buttonsLeftDiscord > a:hover {
+    transform: scale(1.05);
+}
+
+.textLeftDiscord {
+    margin-bottom: 80px;
+}
+
+.textLeftDiscord a{
+    text-decoration: none;
+}
+
+
+.discordButton{
+    border: none;
+    background: var(--text-blue);
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 15pt;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    box-shadow: 0px 17px 44px -12px rgba(0, 115, 255, 0.859);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.discordButton:hover{
+    transform: scale(1.05);
+}
+
+.discordButton:hover > img{
+    margin-left: 25px;
+}
+
+.discordButton img{
+    width: 25px;
+    margin-left: 15px;
+    transition: .3s;   
+}
+
+@media only screen and (max-width: 1440px) {
+    #discordContent {
+        background: url("/backgrounds/discord-background-md.png") left/cover;
+            
+    }
+    .titleDiscord {
+        font-size: 8vh;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .titleDiscord {
+        font-size: 6vw;
+        width: 100%;
+    }
+    .divider {
+        margin-bottom: 30px;
+    }
+    .textLeftDiscord {
+        margin-bottom: 30px;
+    }
+    .secondaryTextDiscord {
+        width: 80%;
+    }
+    .buttonsLeftDiscord > a {
+        width: 7vw;
+        height: 12vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #discordContent {
+        background: url("/backgrounds/discord-background-smd.png") left/cover;
+    }
+}
+
+@media only screen and (max-height: 1366px) and (min-height: 1025px) and (orientation: portrait) {
+    #discordContent {
+        background: url("/backgrounds/discord-background-xs.png") left/59vh;
+        background-repeat: no-repeat;
+    }
+    .secondaryTextDiscord {
+        width: 45%;
+    }
+    .shellLeftDiscord {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .textLeftDiscord{
+        padding: 0px 25px;
+    }
+    .titleDiscord {
+        width: 100%;
+    }
+    .textLeftDiscord {
+        margin-bottom: 15vh;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (min-height: 900px) and (orientation: portrait) {
+    #discordContent {
+        background: url("/backgrounds/discord-background-xs.png") left/59vh;
+        background-repeat: no-repeat;
+    }
+    .secondaryTextDiscord {
+        width: 60%;
+    }
+    .shellLeftDiscord {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .textLeftDiscord{
+        padding: 0px 25px;
+    }
+    .titleDiscord {
+        width: 100%;
+    }
+    .textLeftDiscord {
+        margin-bottom: 10vh;
+    }
+}
+
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+    #discordContent {
+        background: url("/backgrounds/discord-background-xs.png") left/59vh;
+        
+    }
+    .shellLeftDiscord {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .textLeftDiscord{
+        padding: 0px 25px;
+    }
+    .titleDiscord {
+        font-size: 25pt;
+        width: 100%;
+    }
+    .secondaryTextDiscord{
+        width: 100%;
+        font-size: 11pt;
+    }
+    .divider {
+        width: 55vw;
+        height: 10px;
+    }
+    .discordButton{
+        width: 100%;
+    }
+    .textLeftDiscord {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-height: 640px) and (orientation: portrait) {
+    .secondaryTextDiscord {
+        font-size: 11pt;
+    }
+    .titleDiscord {
+        font-size: 25pt;
+        margin-top: 80px;
+    }
+    .textLeftDiscord {
+        margin-bottom: 45px;
+    }
+}

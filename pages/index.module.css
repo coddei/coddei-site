@@ -1,0 +1,191 @@
+.content {
+    height: 100vh;
+    width: 100%;
+}
+
+#homeContent {
+    background: url("/backgrounds/background-home.png") right/cover;
+    transition: background cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
+}
+
+.shellLeft {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    padding-left: 3vw;
+}
+
+.titleHome {
+    color: var(--text-blue);
+    font-size: 7vh;
+    width: 85%;
+    margin: 0px;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.divider {
+    width: 20vw;
+    height: 20px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.secondaryTextHome {
+    color: var( --secondary-black);
+    width: 60%;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.buttonsLeftHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsLeftHome > a {
+    background: var(--text-blue);
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 18px 44px -12px rgba(0, 115, 255, 0.74);
+    transition: 0.3s;
+}
+
+.buttonsLeftHome > a > img {
+    width: 70%;
+}
+
+.buttonsLeftHome > a:hover {
+    transform: scale(1.05);
+}
+
+.textLeftHome {
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 1440px) {
+    #homeContent {
+        background: url("/backgrounds/background-home-md.png")
+            right/cover;
+    }
+    .titleHome {
+        font-size: 8vh;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .titleHome {
+        font-size: 35pt;
+        width: 90%;
+    }
+    .divider {
+        margin-bottom: 30px;
+    }
+    .textLeftHome {
+        margin-bottom: 30px;
+    }
+    .secondaryTextHome {
+        width: 80%;
+    }
+    .buttonsLeftHome > a {
+        width: 7vw;
+        height: 12vh;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    #homeContent {
+        background: url("/backgrounds/background-home-smd.png")
+            right/cover;
+    }
+}
+
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+    #homeContent {
+        background: url("/backgrounds/background-home-xs.png")
+        right/cover;
+    }
+    .textLeftHome {
+        margin-bottom: 0px;
+    }
+    .titleHome {
+        font-size: 30pt;
+        width: 100%;
+        margin-top: 90px;
+    }
+    
+    .secondaryTextHome {
+        width: 100%;
+        font-size: 12pt
+    }
+    
+    .shellLeft {
+        justify-content: start;
+        width: 90vw;
+        height: 100vh;
+    }
+    .buttonsLeftHome > a{
+        width: 11vw;
+        height: 4vh;
+        margin: 0px 17px;
+    }
+    .divider {
+        width: 55vw;
+        height: 13px;
+    }
+}
+
+@media only screen and (max-height: 1366px) and (min-height: 1025px) and (orientation: portrait) {
+    #homeContent {
+        background: url("/backgrounds/background-home-md.png")
+            right/115vh;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-height: 1024px) and (min-height: 900px) and (orientation: portrait) {
+    #homeContent {
+        background: url("/backgrounds/background-home-md.png")
+            right/95vh;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-height: 640px) and (orientation: portrait) {
+    .secondaryTextHome {
+        font-size: 11pt;
+    }
+    .titleHome {
+        font-size: 25pt;
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+    .secondaryTextHome {
+        display: none;
+    }
+    .divider {
+        margin-bottom: 0px;
+        height: 10px;
+    }
+    .titleHome {
+        font-size: 25pt;
+        width: 100%;
+    }
+    .textLeftHome {
+        margin-bottom: 0px;
+    }
+}

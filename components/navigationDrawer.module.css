@@ -1,0 +1,46 @@
+.navigationDrawer {
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    left: -60vw;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(15px);
+    transition: .5s;
+    background: rgba(255, 255, 255, 0.686);
+    z-index: 9;
+    border-radius: 0px 40px 40px 0px;
+}
+
+.drawerOpen {
+    box-shadow: 10px 1px 20px rgba(64, 87, 156, 0.239);
+    left: 0;
+}
+
+.closerDiv {
+    width: 40vw;
+    height: 100vh;
+    background: none;
+    position: absolute;
+    right: 0;
+}
+
+.closeIcon {
+    width: 20px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+.navigationDrawer ul {
+    padding: 0px;
+    margin-top: 45px;
+}
+
+.navigationItem {
+    list-style: none;
+    width: 100%;
+    font-size: 13pt;
+    color: #FFF;
+    padding: 15px 0px;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+:root {
+    /* Text */
+    --text-dark: #232d4f;
+    --text-light: #fff;
+    --text-light-blue: #659de1;
+    --text-blue: #0073ff;
+    --secondary-black: #426187;
+
+    /* Background */
+    --light-background: #fff;
+    --dark-background: #202040;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+button{
+    outline: 0;
+}
+
+.dark {
+    background: var(--light-background);
+}
+
+.light {
+    background: var(--light-background);
+}
+
+.back-blue{
+    background: var(--text-blue);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-light-blue{
+    color: var(--text-light-blue);
+}
+
+.text-blue{
+    color: var(--text-blue);
+}
