@@ -6,35 +6,18 @@ export default function Home() {
 	return (
 		<Layout>
 			<div className={styles.content} id={styles.homeContent}>
-				<div className={styles.shellLeft}>
-					
-					<div className={styles.textLeftHome}>
-						<h1 className={styles.titleHome}>
-							Tudo começa<br/>na programação.
-						</h1>
-					
-						<div className={`${styles.divider} back-blue`}></div>
-
-						<p className={styles.secondaryTextHome}>
-							O Coddei é uma plataforma em desenvolvimento que cria soluções para
-							programadores, designers experientes e também para aqueles que estão começando nessas profissões.
-						</p>
-
+				<div className={styles.textLeftHome}>
+					<h1 className={styles.titleHome}>
+						🚧 Em desenvolvimento 🚧
+					</h1>
+					<div className={styles.enterDiscord}>
+						<div>
+							<a href="https://bit.ly/coddeidiscord">
+								Discord
+							</a>
+							<img src="https://www.pngkey.com/png/full/20-200938_white-discord-logo-png-png-free-discord-logo.png"></img>
+						</div>
 					</div>
-
-					<div className={styles.buttonsLeftHome}>
-						<Link href="/sobre">
-							<a><img src="/images/multiple-users-silhouette.png"></img></a>
-						</Link>						
-						<Link href="/discord">
-							<a><img src="/images/discord.png"></img></a>
-						</Link>
-
-						<a href="https://github.com/coddei">
-							<img src="/images/github-image.png"></img>
-						</a>
-					</div>
-
 				</div>
 			</div>
 		</Layout>
