@@ -79,6 +79,16 @@
     text-align: center;
 }
 
+.logoHome {
+    width: 50%;
+}
+
+.logoHome>img {
+    width: 40%;
+
+    margin-right: 10%;
+}
+
 .enterDiscord {
     font-size: 2vh;
     width: 50%;

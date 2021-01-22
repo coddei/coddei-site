@@ -18,9 +18,6 @@ function Layout({ children }) {
                     programadores, designers experientes e também para aqueles que estão começando nessas profissões."
                 />
             </Head>
-            <header>
-                <Navbar></Navbar>
-            </header>
             <main>
                 {children}
             </main>

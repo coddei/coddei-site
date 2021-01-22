@@ -7,6 +7,10 @@ export default function Home() {
 		<Layout>
 			<div className={styles.content} id={styles.homeContent}>
 				<div className={styles.textLeftHome}>
+					<div className={styles.logoHome}>
+						<img src="/logos/logo-1.png" alt="logo coddei" />
+					</div>
+
 					<h1 className={styles.titleHome}>
 						🚧 Em desenvolvimento 🚧
 					</h1>
